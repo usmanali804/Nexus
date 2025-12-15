@@ -6,6 +6,7 @@ import { Card, CardBody, CardHeader } from '../../components/ui/Card';
 import { Input } from '../../components/ui/Input';
 import { Badge } from '../../components/ui/Badge';
 import { EntrepreneurCard } from '../../components/entrepreneur/EntrepreneurCard';
+import CalendarView from '../../components/calendar/CalendarView';
 import { useAuth } from '../../context/AuthContext';
 import { Entrepreneur } from '../../types';
 import { entrepreneurs } from '../../data/users';
@@ -146,6 +147,8 @@ export const InvestorDashboard: React.FC = () => {
           </CardBody>
         </Card>
       </div>
+      
+      <CalendarView />
       
       {/* Entrepreneurs grid */}
       <div>
